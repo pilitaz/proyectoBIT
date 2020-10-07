@@ -29,41 +29,49 @@
 
   <body>
     <!-- Barra de Navegación -->
-    <nav class="navbar navbar-dark justify-content-between barra-superior">
-      <img class="logo p-2" src="./imagenes/logo-mascotadevuelta3.png" alt="" />
-      <div class="datos-usuario">
+    <!-- Parte Izquierda: Logo -->
+    <nav class="navbar navbar-dark justify-content-between barra-superior bg-color-5">
+        <img class="logo p-2" src="./imagenes/logo-mascotadevuelta3.png" alt="" />
+      <!-- Parte Derecha: Sección del Usuario -->
+      <div class="seccion-usuario mr-4">
         <div class="row">
           <div class="col text-light text-center">
-            <a href="#" class="material-icons icono-usuario"> person </a>
+            <a href="#" class="material-icons icono-usuario text-color-3 text-decoration-none"> person </a>
           </div>
           <div class="col text-light text-center">
-            <a href="#" class="material-icons icono-usuario"> person </a>
+            <a href="#" class="material-icons icono-usuario text-color-3 text-decoration-none"> person </a>
           </div>
         </div>
         <div class="row">
-          <div class="col text-light text-center"><a href="#">Ingreso</a></div>
-          <div class="col text-light text-center"><a href="#">Regístrate</a></div>
+          <div class="col text-center">
+            <a class="texto-usuario text-decoration-none text-color-3" href="#">Ingreso</a>
+          </div>
+          <div class="col text-center">
+            <a class="texto-usuario text-decoration-none text-color-3" href="#">Regístrate</a>
+          </div>
         </div>
       </div>
     </nav>
     <nav class="navbar navbar-light justify-content- barra-inferior">
-      <a href="#" class="navbar-text">Sobre Nosotros</a>
-      <a href="#" class="navbar-text">¿Cómo Funciona?</a>
-      <a href="#" class="navbar-text"> Busca tu Mascota</a>
-      <a href="#" class="navbar-text">Casos Felices</a>
-      <a href="#" class="navbar-text">Reporta una Mascota</a>
+      <a href="#" class="navbar-text text-decoration-none text-dark font-weight-bold">Sobre Nosotros</a>
+      <a href="#" class="navbar-text text-decoration-none text-dark font-weight-bold">¿Cómo Funciona?</a>
+      <a href="#" class="navbar-text text-decoration-none text-dark font-weight-bold"> Busca tu Mascota</a>
+      <a href="#" class="navbar-text text-decoration-none text-dark font-weight-bold">Casos Felices</a>
+      <a href="#" class="navbar-text text-decoration-none text-dark font-weight-bold"
+        >Reporta una Mascota</a
+      >
     </nav>
 
-    <hr />
+
     <!-- Contenedor del iframe -->
-    <div class="contenedor-iframe">
-      <h1>iframe</h1>
-      <iframe src="" frameborder="0"></iframe>
+    <div class="contenedor-iframe border border-secondary d-flex justify-content-center align-items-center">
+      <h1>&lt;iframe&gt;</h1>
+      <!-- <iframe src="" frameborder="0"></iframe> -->
     </div>
-    <hr />
+
     <!-- Footer -->
-    <footer class="d-flex justify-content-between p-2">
-      <h1 class="titulo">Footer</h1>
+    <footer class="d-flex justify-content-center">
+      <h6 class="firma position-fixed">mascotadevuelta.com® 2020</h1>
     </footer>
 
     <!-- TODOS LOS SCRIPTS -->
