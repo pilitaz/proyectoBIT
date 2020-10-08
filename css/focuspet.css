@@ -1,0 +1,15 @@
+body {
+  background-color: #162161;
+}
+
+.carousel {
+  height: 100px;
+}
+
+.focuspet {
+  height: 250px;
+}
+
+span.icons {
+  font-size: 60px;
+}
