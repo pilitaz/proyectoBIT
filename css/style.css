@@ -48,18 +48,19 @@ body {
 }
 
 .icono-usuario {
-  font-size: 50px;
-}
-
-/* .contenedor-iframe {
-  height: 50vh;
-} */
-
-.firma {
-  bottom: 10px;
+  font-size: 30px;
 }
 
 .icono-usuario:hover,
-.texto-usuario:hover {
+.texto-usuario:hover,
+.icono-social:hover {
   color: #f29f05;
+}
+
+#contenidoIframe {
+  width: 100%;
+}
+
+.redes-sociales {
+  font-size: 20px;
 }

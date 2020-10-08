@@ -30,68 +30,125 @@
   <body>
     <!-- Barra de Navegación -->
     <!-- Parte Izquierda: Logo -->
-    <nav class="navbar navbar-dark justify-content-between barra-superior bg-color-5">
-        <img class="logo p-2" src="./imagenes/logo-mascotadevuelta3.png" alt="" />
+    <nav
+      class="navbar navbar-dark justify-content-between barra-superior bg-color-5"
+    >
+      <img class="logo p-2" src="./imagenes/logo-mascotadevuelta3.png" alt="" />
       <!-- Parte Derecha: Sección del Usuario -->
       <div class="seccion-usuario mr-4">
         <div class="row">
           <div class="col text-light text-center">
-            <a href="#" class="material-icons icono-usuario text-color-3 text-decoration-none"> person </a>
+            <a
+              href="#"
+              class="fas fa-sign-in-alt icono-usuario text-color-3 text-decoration-none"
+            ></a>
           </div>
           <div class="col text-light text-center">
-            <a href="#" class="material-icons icono-usuario text-color-3 text-decoration-none"> person </a>
+            <a
+              href="#"
+              class="fas fa-user-plus icono-usuario text-color-3 text-decoration-none"
+            ></a>
           </div>
         </div>
         <div class="row">
           <div class="col text-center">
-            <a class="texto-usuario text-decoration-none text-color-3" href="#">Ingreso</a>
+            <a class="texto-usuario text-decoration-none text-color-3" href="#"
+              >Ingresa</a
+            >
           </div>
           <div class="col text-center">
-            <a class="texto-usuario text-decoration-none text-color-3" href="#">Regístrate</a>
+            <a class="texto-usuario text-decoration-none text-color-3" href="#"
+              >Regístrate</a
+            >
           </div>
         </div>
       </div>
     </nav>
     <nav class="navbar navbar-light justify-content- barra-inferior">
-      <a href="#" class="navbar-text text-decoration-none text-dark font-weight-bold" id="comoFunciona">¿Cómo Funciona?</a>
-      <a href="#" class="navbar-text text-decoration-none text-dark font-weight-bold" id="buscaTuMascota"> Busca tu Mascota</a>
-      <a href="#" class="navbar-text text-decoration-none text-dark font-weight-bold" id="reportaUnaMascota"
+      <a
+        href="#"
+        class="navbar-text text-decoration-none text-dark font-weight-bold"
+        id="comoFunciona"
+        >¿Cómo Funciona?</a
+      >
+      <a
+        href="#"
+        class="navbar-text text-decoration-none text-dark font-weight-bold"
+        id="buscaTuMascota"
+      >
+        Busca tu Mascota</a
+      >
+      <a
+        href="#"
+        class="navbar-text text-decoration-none text-dark font-weight-bold"
+        id="reportaUnaMascota"
         >Reporta una Mascota</a
       >
-      <a href="#" class="navbar-text text-decoration-none text-dark font-weight-bold" id="casosFelices">Casos Felices</a>
-      <a href="#" class="navbar-text text-decoration-none text-dark font-weight-bold" id="sobreNosotros">Sobre Nosotros</a>
+      <a
+        href="#"
+        class="navbar-text text-decoration-none text-dark font-weight-bold"
+        id="casosFelices"
+        >Casos Felices</a
+      >
+      <a
+        href="#"
+        class="navbar-text text-decoration-none text-dark font-weight-bold"
+        id="sobreNosotros"
+        >Sobre Nosotros</a
+      >
     </nav>
 
-
     <!-- Contenedor del iframe -->
-    <div class="contenedor-iframe border border-secondary d-flex justify-content-center align-items-center">
+    <div
+      class="contenedor-iframe d-flex justify-content-center align-items-center"
+    >
       <!-- <h1 class="text-color-5">&lt;iframe&gt;</h1> -->
       <iframe src="" frameborder="0" id="contenidoIframe"></iframe>
     </div>
 
-    <!-- Footer -->
-    <footer class="d-flex justify-content-center h-75">
-      <div class="redes-sociales">
-        <i class="fab fa-facebook-f border border-dark rounded-lg p-1 mx-1"></i>
-        <i class="fab fa-instagram border border-dark rounded-lg p-1 mx-1"></i>
-        <i class="fab fa-twitter border border-dark rounded-lg p-1 mx-1"></i>
-        <i class="fab fa-youtube border border-dark rounded-lg p-1 mx-1"></i>
-        <i class="fas fa-share-alt border border-dark rounded-lg p-1 mx-1"></i>
-
+    <!-- Contenedor Footer -->
+    <footer class="d-flex flex-column align-items-center bg-color-5">
+      <!-- Redes Sociales -->
+      <div class="redes-sociales m-3 py-2 border">
+        <i class="fab fa-facebook-f px-3 text-color-3 icono-social"></i>
+        <i class="fab fa-instagram px-3 text-color-3 icono-social"></i>
+        <i class="fab fa-twitter px-3 text-color-3 icono-social"></i>
+        <i class="fab fa-youtube px-3 text-color-3 icono-social"></i>
+        <i class="fas fa-share-alt px-3 text-color-3 icono-social"></i>
       </div>
-      <h6 class="firma">mascotadevuelta.com® 2020</h1>
+
+      <div class="footerInfo border text-color-3 mx-3 mb-3">
+        <div class="row">
+          <div class="col text-justify">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
+            nesciunt omnis? Sit exercitationem illum rerum dolorem dolores atque
+            fugiat ducimus.
+          </div>
+          <div class="col text-justify">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
+            nesciunt omnis? Sit exercitationem illum rerum dolorem dolores atque
+            fugiat ducimus.
+          </div>
+          <div class="col text-justify">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
+            nesciunt omnis? Sit exercitationem illum rerum dolorem dolores atque
+            fugiat ducimus.
+          </div>
+        </div>
+      </div>
+
+      <!-- Nombre de la página -->
+      <h6 class="firma text-color-3 border">mascotadevuelta.com® 2020</h6>
     </footer>
 
     <!-- TODOS LOS SCRIPTS -->
 
     <!-- fontawesome -->
-        <script
+    <script
       src="https://kit.fontawesome.com/a6b65a4213.js"
       crossorigin="anonymous"
     ></script>
 
-    <!-- Optional JavaScript -->
-    <script src="./assets/script.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -108,5 +165,8 @@
       integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
       crossorigin="anonymous"
     ></script>
+
+    <!-- JavaScript -->
+    <script src="./assets/script.js"></script>
   </body>
 </html>
