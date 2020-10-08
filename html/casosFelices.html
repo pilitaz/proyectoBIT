@@ -22,124 +22,136 @@
     />
 
     <!-- Styles CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/casosFelices.css" />
 
     <title>mascotadevuelta.com</title>
   </head>
 
   <body>
-    <!-- Barra de Navegación -->
-    <!-- Parte Izquierda: Logo -->
-    <nav
-      class="navbar navbar-dark justify-content-between barra-superior bg-color-5"
-    >
-      <img class="logo p-2" src="./imagenes/logo-mascotadevuelta3.png" alt="" />
-      <!-- Parte Derecha: Sección del Usuario -->
-      <div class="seccion-usuario mr-4">
-        <div class="row">
-          <div class="col text-light text-center">
-            <a
-              href="#"
-              class="fas fa-sign-in-alt icono-usuario text-color-3 text-decoration-none"
-            ></a>
-          </div>
-          <div class="col text-light text-center">
-            <a
-              href="#"
-              class="fas fa-user-plus icono-usuario text-color-3 text-decoration-none"
-            ></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col text-center">
-            <a class="texto-usuario text-decoration-none text-color-3" href="#"
-              >Ingresa</a
-            >
-          </div>
-          <div class="col text-center">
-            <a class="texto-usuario text-decoration-none text-color-3" href="#"
-              >Regístrate</a
-            >
-          </div>
-        </div>
-      </div>
-    </nav>
-    <nav class="navbar navbar-light justify-content- barra-inferior">
-      <a
-        href="#"
-        class="navbar-text text-decoration-none text-dark font-weight-bold"
-        id="comoFunciona"
-        >¿Cómo Funciona?</a
-      >
-      <a
-        href="#"
-        class="navbar-text text-decoration-none text-dark font-weight-bold"
-        id="buscaTuMascota"
-      >
-        Busca tu Mascota</a
-      >
-      <a
-        href="#"
-        class="navbar-text text-decoration-none text-dark font-weight-bold"
-        id="reportaUnaMascota"
-        >Reporta una Mascota</a
-      >
-      <a
-        href="#"
-        class="navbar-text text-decoration-none text-dark font-weight-bold"
-        id="casosFelices"
-        >Casos Felices</a
-      >
-      <a
-        href="#"
-        class="navbar-text text-decoration-none text-dark font-weight-bold"
-        id="sobreNosotros"
-        >Sobre Nosotros</a
-      >
-    </nav>
+    <!-- Título -->
+    <h1 class="titulo text-color-3 text-center bg-color-5 py-3">
+      Casos Felices
+    </h1>
 
-    <!-- Contenedor del iframe -->
+    <!-- Carousel -->
     <div
-      class="contenedor-iframe d-flex justify-content-center align-items-center"
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-ride="carousel"
     >
-      <!-- <h1 class="text-color-5">&lt;iframe&gt;</h1> -->
-      <iframe src="" frameborder="0" id="contenidoIframe"></iframe>
-    </div>
-
-    <!-- Contenedor Footer -->
-    <footer class="footer d-flex flex-column align-items-center bg-color-5">
-      <!-- Redes Sociales -->
-      <div class="redes-sociales m-3 py-2">
-        <i class="fab fa-facebook-f px-3 text-color-3 icono-social"></i>
-        <i class="fab fa-instagram px-3 text-color-3 icono-social"></i>
-        <i class="fab fa-twitter px-3 text-color-3 icono-social"></i>
-        <i class="fab fa-youtube px-3 text-color-3 icono-social"></i>
-        <i class="fas fa-share-alt px-3 text-color-3 icono-social"></i>
-      </div>
-
-      <div class="footerInfo text-color-3 mx-3 mb-3">
-        <div class="row">
-          <div class="col text-justify">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
-            nesciunt omnis? Sit exercitationem illum rerum dolorem dolores atque
-            fugiat ducimus.
+      <div class="carousel-inner">
+        <!-- Tarjeta #1 -->
+        <div class="carousel-item active">
+          <div class="card bg-color-3 tarjetaCasoFeliz">
+            <div class="card-body p-1">
+              <div class="row">
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                  <h4 class="card-title">Finalmente lo encontré...</h4>
+                  <h5 class="card-text text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae ea odio ipsa corrupti eligendi tempore aut eius
+                    dignissimos ratione, vero error dolorum maiores libero quo
+                    assumenda architecto, harum sed asperiores.
+                  </h5>
+                </div>
+                <div
+                  class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="../imagenes/casoFeliz1.jpg"
+                    alt="imagen-caso-feliz"
+                    class="imagenCasoFeliz p-2 my-2"
+                  />
+                </div>
+              </div>
+              <h6 class="card-footer text-right mt-2">Juan Carlos, Bogotá.</h6>
+            </div>
           </div>
-          <div class="col text-justify">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
-            nesciunt omnis? Sit exercitationem illum rerum dolorem dolores atque
-            fugiat ducimus.
+        </div>
+
+        <!-- Tarjeta #2 -->
+        <div class="carousel-item">
+          <div class="card bg-color-3 tarjetaCasoFeliz">
+            <div class="card-body p-1">
+              <div class="row">
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                  <h4 class="card-title">Finalmente lo encontré...</h4>
+                  <h5 class="card-text text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae ea odio ipsa corrupti eligendi tempore aut eius
+                    dignissimos ratione, vero error dolorum maiores libero quo
+                    assumenda architecto, harum sed asperiores.
+                  </h5>
+                </div>
+                <div
+                  class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="../imagenes/casoFeliz2.jpg"
+                    alt="imagen-caso-feliz"
+                    class="imagenCasoFeliz p-2 my-2"
+                  />
+                </div>
+              </div>
+              <h6 class="card-footer text-right mt-2">
+                Carolina Restrepo, Medellín.
+              </h6>
+            </div>
           </div>
-          <div class="col text-justify">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum,
-            nesciunt omnis? Sit exercitationem illum rerum dolorem dolores atque
-            fugiat ducimus.
+        </div>
+
+        <!-- Tarjeta #3 -->
+        <div class="carousel-item">
+          <div class="card bg-color-3 tarjetaCasoFeliz">
+            <div class="card-body p-1">
+              <div class="row">
+                <div class="col-md-8 d-flex flex-column justify-content-center">
+                  <h4 class="card-title">Finalmente lo encontré...</h4>
+                  <h5 class="card-text text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Recusandae ea odio ipsa corrupti eligendi tempore aut eius
+                    dignissimos ratione, vero error dolorum maiores libero quo
+                    assumenda architecto, harum sed asperiores.
+                  </h5>
+                </div>
+                <div
+                  class="col-md-4 d-flex align-items-center justify-content-center"
+                >
+                  <img
+                    src="../imagenes/casoFeliz3.jpg"
+                    alt="imagen-caso-feliz"
+                    class="imagenCasoFeliz p-2 my-2"
+                  />
+                </div>
+              </div>
+              <h6 class="card-footer text-right mt-2">
+                Diana Marcela, Bogotá.
+              </h6>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- Nombre de la página -->
-      <h6 class="firma text-color-3 mt-2">mascotadevuelta.com® 2020</h6>
-    </footer>
+      <!-- Controles del Carousel -->
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleControls"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
 
     <!-- TODOS LOS SCRIPTS -->
 
