@@ -61,6 +61,11 @@ body {
   width: 100%;
 }
 
+.footer {
+  position: absolute;
+  bottom: 0;
+}
+
 .redes-sociales {
   font-size: 20px;
 }
