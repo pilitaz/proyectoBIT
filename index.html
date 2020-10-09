@@ -43,31 +43,38 @@
       <div class="seccion-usuario mr-4">
         <div class="row">
           <div class="col text-light text-center">
-            <a
-              href="#"
-              class="fas fa-sign-in-alt icono-usuario text-color-3 text-decoration-none"
-            ></a>
+            <div
+              class="d-flex flex-column"
+              data-toggle="modal"
+              data-target="#basicExampleModal"
+            >
+              <a
+                href="#"
+                class="fas fa-sign-in-alt icono-usuario text-color-3 text-decoration-none"
+              ></a>
+              <a
+                class="texto-usuario text-decoration-none text-color-3"
+                href="#"
+                >Ingresa</a
+              >
+            </div>
           </div>
           <div class="col text-light text-center">
-            <a
-              href="#"
-              class="fas fa-user-plus icono-usuario text-color-3 text-decoration-none"
-            ></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col text-center">
-            <a
-              id="iconIngresar"
-              class="texto-usuario text-decoration-none text-color-3"
-              href="#"
-              >Ingresa</a
+            <div
+              class="d-flex flex-column"
+              data-toggle="modal"
+              data-target="#basicExampleModal"
             >
-          </div>
-          <div id="iconUsuario" class="col text-center">
-            <a class="texto-usuario text-decoration-none text-color-3" href="#"
-              >Regístrate</a
-            >
+              <a
+                href="#"
+                class="fas fa-user-plus icono-usuario text-color-3 text-decoration-none"
+              ></a>
+              <a
+                class="texto-usuario text-decoration-none text-color-3"
+                href="#"
+                >Registrate</a
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -93,7 +100,80 @@
         >Casos Felices</a
       >
     </nav>
+    <!--Modal-->
+    <div
+      class="modal fade"
+      id="basicExampleModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Usuario Registrado
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div
+              class="container rounded-lg bg-color-3 d-flex justify-content-center px-0"
+            >
+              <form class="form-group text-center w-50 my-0">
+                <img
+                  class="imagenIngreso rounded-circle my-3"
+                  src="imagenes/imagenIngreso.jpg"
+                  alt=""
+                  height="200"
+                />
 
+                <input
+                  type="email"
+                  id="ingreseCorreo"
+                  class="form-control my-2"
+                  placeholder="Correo electrónico"
+                  required
+                  autofocus
+                />
+
+                <input
+                  type="password"
+                  id="ingreseContraseña"
+                  class="form-control my-2"
+                  placeholder="Contraseña"
+                  required
+                />
+
+                <!-- Checkbox Recordarme -->
+                <div class="checkbox mb-3">
+                  <label>
+                    <input type="checkbox" value="recordarme" /> Recordarme
+                  </label>
+                </div>
+
+                <!-- Botón Ingresar -->
+                <button
+                  class="btn btn-lg btn-block bg-color-5 text-light"
+                  type="submit"
+                >
+                  Ingresar
+                </button>
+                <p class="mt-5 mb-3 text-center text-muted">&copy;2020</p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- Contenedor del iframe -->
     <div
       class="contenedor-iframe d-flex justify-content-center align-items-center contenidoIframeClass"
