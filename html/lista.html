@@ -114,7 +114,7 @@
     <div class="row contenedor">
       <!-- Total resultados -->
       <div
-        class="col-2 d-flex flex-column align-items-left justify-content-center p-5"
+        class="col-md-2 col-sm-10 d-flex flex-column align-items-left justify-content-center p-5"
       >
         <span>Total de resultados</span>
         <span>Mascotas por ciudad:</span>
@@ -125,30 +125,44 @@
         <span>Perdidos: 6</span>
       </div>
       <!-- Cards imagenes-->
-      <div class="col-10 p-5">
+      <div class="col-md-10 col-sm-12 p-5">
         <div class="card mb-3 border-0">
           <div class="row">
-            <div class="col-md-4 d-flex align-items-center">
+            <div class="col-md-4 col-sm-12 d-flex align-items-center">
               <img
                 src="../imagenes/1.jpg"
                 class="card-img imagenesPerritos"
                 alt="..."
               />
             </div>
-            <div class="col-md-6 d-flex align-items-center mx-5">
+            <div class="col-md-6 col-sm-10 d-flex align-items-center mx-5">
               <div class="card-body blueCard">
-                <div class="row">
-                  <div class="col-md-6 d-flex flex-column">
-                    <span class="material-icons spanAmarillo"> loyalty </span>
-                    <span class="material-icons spanAmarillo"> pets </span>
+                <div class="row d-flex containerBlueCard align-items-center">
+                  <div class="col-md-6 col-sm-4 d-flex flex-column">
+                    <div class="d-flex justify-content-center m-3">
+                      <span class="material-icons spanAmarillo"> loyalty </span>
+                      <span>Hembra</span>
+                    </div>
+                    <div class="d-flex justify-content-center m-3">
+                      <span class="material-icons spanAmarillo"> pets </span>
+                      <span>2 años</span>
+                    </div>
                   </div>
-                  <div class="col-md-6 d-flex flex-column">
-                    <span class="material-icons spanAmarillo"> favorite </span>
-                    <span class="material-icons spanAmarillo"> place </span>
+                  <div class="col-md-6 col-sm-4 d-flex flex-column">
+                    <div class="d-flex justify-content-center m-3">
+                      <span class="material-icons spanAmarillo">
+                        favorite
+                      </span>
+                      <span>1 de Otubre</span>
+                    </div>
+                    <div class="d-flex justify-content-center m-3">
+                      <span class="material-icons spanAmarillo"> place </span>
+                      <span>Bogotá, Suba</span>
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <button id="verMas1">Ver más</button>
+                <div class="row w-100 d-flex justify-content-end">
+                  <button id="verMas1" class="botonDetalles">Ver más</button>
                 </div>
               </div>
             </div>
@@ -163,20 +177,34 @@
                 alt="..."
               />
             </div>
-            <div class="col-md-6 d-flex align-items-center mx-5">
+            <div class="col-md-6 col-sm-10 d-flex align-items-center mx-5">
               <div class="card-body blueCard">
-                <div class="row">
-                  <div class="col-md-6 d-flex flex-column">
-                    <span class="material-icons spanAmarillo"> loyalty </span>
-                    <span class="material-icons spanAmarillo"> pets </span>
+                <div class="row d-flex containerBlueCard align-items-center">
+                  <div class="col-md-6 col-sm-4 d-flex flex-column">
+                    <div class="d-flex justify-content-center m-3">
+                      <span class="material-icons spanAmarillo"> loyalty </span>
+                      <span>Macho</span>
+                    </div>
+                    <div class="d-flex justify-content-center m-3">
+                      <span class="material-icons spanAmarillo"> pets </span>
+                      <span> 4 años</span>
+                    </div>
                   </div>
-                  <div class="col-md-6 d-flex flex-column">
-                    <span class="material-icons spanAmarillo"> favorite </span>
-                    <span class="material-icons spanAmarillo"> place </span>
+                  <div class="col-md-6 col-sm-4 d-flex flex-column">
+                    <div class="d-flex justify-content-center m-3">
+                      <span class="material-icons spanAmarillo">
+                        favorite
+                      </span>
+                      <span>2 de febrero</span>
+                    </div>
+                    <div class="d-flex justify-content-center m-3">
+                      <span class="material-icons spanAmarillo"> place </span>
+                      <span>Bogotá, Salitre</span>
+                    </div>
                   </div>
                 </div>
-                <div class="row">
-                  <button id="verMas2">Ver más</button>
+                <div class="row w-100 d-flex justify-content-end">
+                  <button id="verMas2" class="botonDetalles">Ver más</button>
                 </div>
               </div>
             </div>
