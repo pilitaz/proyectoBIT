@@ -11,35 +11,35 @@ body {
 
 /* Texto */
 .text-color-1 {
-  color: #f25c05;
+  color: #f25c05 !important;
 }
 .text-color-2 {
-  color: #f29f05;
+  color: #f29f05 !important;
 }
 .text-color-3 {
-  color: #f2b705;
+  color: #f2b705 !important;
 }
 .text-color-4 {
-  color: #f2e205;
+  color: #f2e205 !important;
 }
 .text-color-5 {
-  color: #162161;
+  color: #162161 !important;
 }
 /* Fondo */
 .bg-color-1 {
-  background-color: #f25c05;
+  background-color: #f25c05 !important;
 }
 .bg-color-2 {
-  background-color: #f29f05;
+  background-color: #f29f05 !important;
 }
 .bg-color-3 {
-  background-color: #f2b705;
+  background-color: #f2b705 !important;
 }
 .bg-color-4 {
-  background-color: #f2e205;
+  background-color: #f2e205 !important;
 }
 .bg-color-5 {
-  background-color: #162161;
+  background-color: #162161 !important;
 }
 /* ********************************************************* */
 
