@@ -97,3 +97,9 @@ body {
   background: #f29f05;
 }
 /*---------- end scroll ----------*/
+
+/* logo*/
+
+#logoPrincipal {
+  cursor: pointer;
+}

@@ -2,7 +2,7 @@
 const buscaTuMascota = document.querySelector('#buscaTuMascota');
 const reportaUnaMascota = document.querySelector('#reportaUnaMascota');
 const casosFelices = document.querySelector('#casosFelices');
-// const sobreNosotros = document.querySelector('#sobreNosotros');
+const logoPrincipal = document.querySelector('#logoPrincipal');
 const contenidoIframe = document.querySelector('#contenidoIframe');
 
 window.addEventListener('resize', reportWindowSize);
@@ -12,6 +12,10 @@ function reportWindowSize() {
   let heightIframe = heightOriginal - 275;
   contenidoIframe.setAttribute('style', 'height:' + heightIframe + 'px');
 }
+
+logoPrincipal.addEventListener("click", function (event) {
+  cambiarSRCIframe("contenidoInicial")
+}, true);
 
 buscaTuMascota.addEventListener("click", function (event) {
   cambiarSRCIframe("lista")
