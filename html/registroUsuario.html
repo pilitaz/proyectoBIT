@@ -30,48 +30,91 @@
   <body>
     <!-- Título -->
     <h1 class="titulo text-color-3 text-center bg-color-5 py-3">
-      Usuario Registrado
+      Registro de Usuario
     </h1>
 
-    <div class="container rounded-lg bg-color-3 d-flex justify-content-center px-0">
-      <form class="form-group text-center w-50 my-0">
+    <!-- Contenedor del formulario -->
+    <div
+      class="container rounded-lg bg-color-3 d-flex justify-content-center px-0"
+    >
+      <!-- Formulario -->
+      <form class="form-group text-center formularioRegistroUsuario mx-5 w-100">
         <img
           class="imagenIngreso rounded-circle my-3"
-          src="../imagenes/imagenIngreso.jpg"
+          src="../imagenes/imagenRegistro.jpg"
           alt=""
           height="200"
         />
 
-        <input
-          type="email"
-          id="ingreseCorreo"
-          class="form-control my-2"
-          placeholder="Correo electrónico"
-          required
-          autofocus
-        />
-
-        <input
-          type="password"
-          id="ingreseContraseña"
-          class="form-control my-2"
-          placeholder="Contraseña"
-          required
-        />
-
-        <!-- Checkbox Recordarme -->
-        <div class="checkbox mb-3">
-          <label>
-            <input type="checkbox" value="recordarme" /> Recordarme
-          </label>
+        <div class="form-row">
+          <div class="col">
+            <input
+              type="email"
+              id="ingreseCorreo"
+              class="form-control my-2"
+              placeholder="Correo electrónico"
+              required
+              autofocus
+            />
+          </div>
+          <div class="col">
+            <input
+              type="email"
+              id="confirmeCorreo"
+              class="form-control my-2"
+              placeholder="Confirmar correo electrónico"
+              required
+              autofocus
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input
+              type="password"
+              id="ingreseContraseña"
+              class="form-control my-2"
+              placeholder="Contraseña"
+              required
+            />
+          </div>
+          <div class="col">
+            <input
+              type="password"
+              id="confirmeContraseña"
+              class="form-control my-2"
+              placeholder="Confirmar contraseña"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col">
+            <input
+              type="text"
+              id="ingreseNombre"
+              class="form-control my-2"
+              placeholder="Nombre completo"
+              required
+            />
+          </div>
+          <div class="col">
+            <input
+              type="text"
+              id="ingreseTeléfono"
+              class="form-control my-2"
+              placeholder="Teléfono"
+              required
+            />
+          </div>
         </div>
 
-        <!-- Botón Ingresar -->
+        <!-- Botón Registrarme  -->
         <button
-          class="btn btn-lg btn-block bg-color-5 text-light"
+          class="btn btn-lg btn-block bg-color-5 text-light mt-4"
           type="submit"
         >
-          Ingresar
+          Registrarme
         </button>
         <p class="mt-5 mb-3 text-center text-muted">&copy;2020</p>
       </form>
