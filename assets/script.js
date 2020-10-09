@@ -4,6 +4,8 @@ const reportaUnaMascota = document.querySelector('#reportaUnaMascota');
 const casosFelices = document.querySelector('#casosFelices');
 const logoPrincipal = document.querySelector('#logoPrincipal');
 const contenidoIframe = document.querySelector('#contenidoIframe');
+const iconIngresar = document.querySelector('#iconIngresar');
+const iconUsuario = document.querySelector('#iconUsuario');
 
 window.addEventListener('resize', reportWindowSize);
 
@@ -27,6 +29,16 @@ reportaUnaMascota.addEventListener("click", function (event) {
 
 casosFelices.addEventListener("click", function (event) {
   cambiarSRCIframe("casosFelices")
+}, true);
+
+iconIngresar.addEventListener("click", function (event) {
+  debugger
+  cambiarSRCIframe("ingresoUsuario");
+}, true);
+
+iconUsuario.addEventListener("click", function (event) {
+  debugger
+  cambiarSRCIframe("ingresoUsuario")
 }, true);
 
 function cambiarSRCIframe(src) {
