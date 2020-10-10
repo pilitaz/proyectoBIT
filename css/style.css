@@ -54,7 +54,7 @@ body {
 .icono-usuario:hover,
 .texto-usuario:hover,
 .icono-social:hover {
-  color: #f29f05;
+  color: #f25c05 !important;
 }
 
 .contenidoIframeClass {
@@ -107,3 +107,6 @@ body {
 #iconVolver {
   cursor: pointer;
 }
+
+/* media queries */
+
