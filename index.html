@@ -29,17 +29,37 @@
 
   <body>
     <!-- Barra de Navegación -->
-    <!-- Parte Izquierda: Logo -->
     <nav
       class="navbar navbar-dark justify-content-between barra-superior bg-color-5"
     >
+      <!-- Parte Izquierda: Logo -->
       <img
         id="logoPrincipal"
         class="logo p-2"
         src="./imagenes/LOGOY.png"
         alt=""
       />
-      <!-- Parte Derecha: Sección del Usuario -->
+      <!-- Parte central: Menú de navegación -->
+          <a
+        href="#"
+        class="navbar-text menuNavegacion text-decoration-none font-weight-bold text-color-3"
+        id="buscaTuMascota"
+      >
+        Busca tu Mascota</a
+      >
+      <a
+        href="#"
+        class="navbar-text menuNavegacion text-decoration-none font-weight-bold text-color-3"
+        id="reportaUnaMascota"
+        >Reporta una Mascota</a
+      >
+      <a
+        href="#"
+        class="navbar-text menuNavegacion text-decoration-none font-weight-bold text-color-3"
+        id="casosFelices"
+        >Casos Felices</a
+      >
+      <!-- Parte derecha: Sección del Usuario -->
       <div class="seccion-usuario mr-4">
         <div class="row">
           <div class="col text-light text-center">
@@ -83,27 +103,7 @@
         </div>
       </div>
     </nav>
-    <nav class="navbar navbar-light justify-content-center barra-inferior">
-      <a
-        href="#"
-        class="navbar-text text-decoration-none font-weight-bold text-color-1 h5 mx-5 px-5"
-        id="buscaTuMascota"
-      >
-        Busca tu Mascota</a
-      >
-      <a
-        href="#"
-        class="navbar-text text-decoration-none font-weight-bold text-color-1 h5 mx-5 px-5"
-        id="reportaUnaMascota"
-        >Reporta una Mascota</a
-      >
-      <a
-        href="#"
-        class="navbar-text text-decoration-none font-weight-bold text-color-1 h5 mx-5 px-5"
-        id="casosFelices"
-        >Casos Felices</a
-      >
-    </nav>
+
     <!--Modal-->
     <div
       class="modal fade"

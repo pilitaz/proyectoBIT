@@ -51,6 +51,7 @@ body {
   font-size: 30px;
 }
 
+.menuNavegacion:hover,
 .icono-usuario:hover,
 .texto-usuario:hover,
 .icono-social:hover {
