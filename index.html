@@ -29,40 +29,69 @@
 
   <body>
     <!-- Barra de Navegación -->
-    <nav
-      class="navbar navbar-dark justify-content-between barra-superior bg-color-5"
-    >
-      <!-- Parte Izquierda: Logo -->
-      <img
-        id="logoPrincipal"
-        class="logo p-2"
-        src="./imagenes/LOGOY.png"
-        alt=""
-      />
-      <!-- Parte central: Menú de navegación -->
-          <a
-        href="#"
-        class="navbar-text menuNavegacion text-decoration-none font-weight-bold text-color-3"
-        id="buscaTuMascota"
+    <nav class="navbar navbar-dark navbar-expand-lg bg-color-5">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img
+          id="logoPrincipal"
+          class="logo p-2"
+          src="./imagenes/LOGOY.png"
+          alt=""
+        />
+      </a>
+
+      <!-- Sección Menú de Navegación -->
+
+      <!-- Botón Menú -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
       >
-        Busca tu Mascota</a
-      >
-      <a
-        href="#"
-        class="navbar-text menuNavegacion text-decoration-none font-weight-bold text-color-3"
-        id="reportaUnaMascota"
-        >Reporta una Mascota</a
-      >
-      <a
-        href="#"
-        class="navbar-text menuNavegacion text-decoration-none font-weight-bold text-color-3"
-        id="casosFelices"
-        >Casos Felices</a
-      >
-      <!-- Parte derecha: Sección del Usuario -->
-      <div class="seccion-usuario mr-4">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú -->
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a
+              id="homePage"
+              class="nav-link menuNavegacion text-color-3 h6 mx-2"
+              href="#"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              id="buscaTuMascota"
+              class="nav-link menuNavegacion text-color-3 h6 mx-2"
+              href="#"
+              >Busca tu Mascota</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              id="reportaUnaMascota"
+              class="nav-link menuNavegacion text-color-3 h6 mx-2"
+              href="#"
+              >Reporta una Mascota</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              id="casosFelices"
+              class="nav-link menuNavegacion text-color-3 h6 mx-2"
+              href="#"
+              >Casos Felices</a
+            >
+          </li>
+        </ul>
+
+        <!-- Sección del Usuario -->
         <div class="row">
-          <div class="col text-light text-center">
+          <div class="col text-center">
             <div
               class="d-flex flex-column"
               data-toggle="modal"
@@ -81,7 +110,7 @@
               >
             </div>
           </div>
-          <div class="col icono-registrate text-light text-center">
+          <div class="col text-center">
             <div
               class="d-flex flex-column"
               data-toggle="modal"
@@ -290,9 +319,8 @@
     <!--fin modal registrate-->
     <!-- Contenedor del iframe -->
     <div
-      class="contenedor-iframe d-flex justify-content-center align-items-center contenidoIframeClass"
+      class="contenedor-iframe d-flex justify-content-center align-items-center border border-danger"
     >
-      <!-- <h1 class="text-color-5">&lt;iframe&gt;</h1> -->
       <iframe
         src="html/contenidoInicial.html"
         frameborder="0"

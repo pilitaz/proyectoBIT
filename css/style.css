@@ -44,7 +44,7 @@ body {
 /* ********************************************************* */
 
 .logo {
-  height: 100px;
+  height: 90px;
 }
 
 .icono-usuario {
@@ -59,7 +59,7 @@ body {
 }
 
 .contenidoIframeClass {
-  /* height: calc(100% - (265px)); */
+  /* height: calc(100vh - 113px); */
   width: 100%;
 }
 
