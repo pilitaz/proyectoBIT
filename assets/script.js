@@ -6,16 +6,16 @@ const logoPrincipal = document.querySelector('#logoPrincipal');
 const contenidoIframe = document.querySelector('#contenidoIframe');
 const btnIngreso = document.querySelector('#btnIngreso');
 const btnRegistro = document.querySelector('#btnRegistro');
-const iconlogin = document.querySelector('#iconlogin');
-const iconRegistro = document.querySelector('#iconRegistro');
-const txtRegistrate = document.querySelector('#txtRegistrate');
-const txtlogin = document.querySelector('#txtlogin');
+const divLogin = document.querySelector('#divLogin');;
+const divRegistrate = document.querySelector('#divRegistrate');;
+const divLogout = document.querySelector('#divLogout');;
+const divUsuario = document.querySelector('#divUsuario');;
 
 window.addEventListener('resize', reportWindowSize);
 
 function reportWindowSize() {
   let heightOriginal = window.innerHeight;
-  let heightIframe = heightOriginal - 275;
+  let heightIframe = heightOriginal - 229;
   contenidoIframe.setAttribute('style', 'height:' + heightIframe + 'px');
 }
 
@@ -43,6 +43,14 @@ btnRegistro.addEventListener("click", function (event) {
   cambiarIconos("ingreso")
 }, true);
 
+divLogout.addEventListener("click", function (event) {
+  cambiarIconos("salir")
+}, true);
+
+divUsuario.addEventListener("click", function (event) {
+  cambiarIconos("salir")
+}, true);
+
 function cambiarSRCIframe(src) {
   document.getElementById("contenidoIframe").src = "html/" + src + ".html";
 }
@@ -51,17 +59,15 @@ function cambiarIconos(origen) {
   if (origen == "ingreso") {
     $('#basicExampleModal').modal('hide');
     $('#basicExampleModal2').modal('hide');
-    iconlogin.setAttribute('class', 'fas fa-sign-out-alt icono-usuario text-color-3 text-decoration-none');
-    iconRegistro.setAttribute('class', 'fas fa-user icono-usuario text-color-3 text-decoration-none');
-    txtlogin.innerHTML = "Salir";
-    txtRegistrate.innerHTML = "Usuario";
+    divLogin.setAttribute('class', 'd-flex flex-column divIconosSup oculto');
+    divRegistrate.setAttribute('class', 'd-flex flex-column divIconosSup oculto');
+    divLogout.setAttribute('class', 'd-flex flex-column divIconosSup');
+    divUsuario.setAttribute('class', 'd-flex flex-column divIconosSup');
   } else {
-    $('#basicExampleModal').modal('hide');
-    $('#basicExampleModal2').modal('hide');
-    iconlogin.setAttribute('class', 'fas fa-sign-in-alt icono-usuario text-color-3 text-decoration-none');
-    iconRegistro.setAttribute('class', 'fas fa-user-plus icono-usuario text-color-3 text-decoration-none');
-    txtRegistrate.innerHTML = "Ingresa";
-    txtlogin.innerHTML = "Registrate";
+    divLogout.setAttribute('class', 'd-flex flex-column divIconosSup oculto');
+    divUsuario.setAttribute('class', 'd-flex flex-column divIconosSup oculto');
+    divLogin.setAttribute('class', 'd-flex flex-column divIconosSup');
+    divRegistrate.setAttribute('class', 'd-flex flex-column divIconosSup');
   }
 }
 

@@ -111,3 +111,11 @@ body {
 
 /* media queries */
 
+.divIconosSup {
+  width: 72px;
+}
+
+.oculto {
+  display: none !important;
+}
+
