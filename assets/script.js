@@ -1,4 +1,5 @@
 
+const homePage = document.querySelector('#homePage');
 const buscaTuMascota = document.querySelector('#buscaTuMascota');
 const reportaUnaMascota = document.querySelector('#reportaUnaMascota');
 const casosFelices = document.querySelector('#casosFelices');
@@ -20,6 +21,10 @@ function reportWindowSize() {
 }
 
 logoPrincipal.addEventListener("click", function (event) {
+  cambiarSRCIframe("contenidoInicial")
+}, true);
+
+homePage.addEventListener("click", function (event) {
   cambiarSRCIframe("contenidoInicial")
 }, true);
 
